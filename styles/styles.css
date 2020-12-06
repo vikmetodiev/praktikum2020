@@ -1,0 +1,153 @@
+.classico{
+    min-height: 375px;
+}
+
+.checked {
+    color: orange;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.neon-text{
+    font-size:4em;
+    color: #fff;
+    text-shadow: 0 0 20px DeepSkyBlue;
+  }
+  body{
+    min-height: 100vh;
+    background-image: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(138,188,210,0.9419117988992471) 100%);
+  }
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.btn-one {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+    border-radius: 100px;
+    margin-right:300px;
+  }
+
+.btn-one:focus{
+    outline: none;
+}
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn-one:hover {
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+  }
+  
+  .btn-one:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn-one span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .card{
+    border-image: 
+    linear-gradient(
+        to bottom, 
+        #00d4ff, 
+        rgba(0, 0, 0, 0)
+    ) 1 100% !important;
+    border-top: 1px solid #00d4ff !important;
+    background-image: linear-gradient(0deg, rgba(145,200,246,0.8),rgba(255,255,255,0.8)) !important;
+  }
+
+  .separator{
+    margin: 0 auto;
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0,191,255, 0), rgba(0, 191, 255, 0.75), rgba(0, 191, 255, 0));
+  margin-bottom:15px;
+  margin-top:15px;
+  }
